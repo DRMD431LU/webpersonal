@@ -1,7 +1,14 @@
-<h1> Mi web personal </h1>
-<ul>
-	<li><a href="/">Portada</a></li>
-	<li><a href="/about-me/">Acerca de</a></li>
-	<li><a href="/portfolio/">Portfolio</a></li>
-	<li><a href="/contact/">Contacto</a></li>
-</ul>
+{%extends 'core/base.html'%}
+{%block title%}Portada{%endblock title%}
+
+{%block background%}{%load static%}{%static 'core/img/home-bg.jpg'%}{%endblock background%}	
+
+{%block headers%}
+<h1>Don peter y sus globos</h1>
+<span class="subheading">globero industrial</span>
+{%endblock headers%}
+
+{%block content%}
+<h1>Portada</h1>
+<p>Esta es la portada</p>
+{%endblock content%}
